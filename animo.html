@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1211695/stars.png');
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.background.active {
+  opacity: 1;
+}
+
+.popup-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #000;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.popup-window.active {
+  opacity: 1;
+}
+
+.popup-window p {
+  text-align: center;
+  margin: 20px;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+</style>
+</head>
+<body><div class="background"></div>
+
+    <div class="popup-window">
+      <span class="close-button" onclick="closePopup()">X</span>
+      <p>Текст всплывающего окна</p>
+    </div>
+    
+    <script>
+function openPopup() {
+  setTimeout(() => {
+    const background = document.querySelector('.background');
+    const popupWindow = document.querySelector('.popup-window');
+    background.classList.add('active');
+    popupWindow.classList.add('active');
+  }, 2000);
+}
+
+function closePopup() {
+  const background = document.querySelector('.background');
+  const popupWindow = document.querySelector('.popup-window');
+  background.classList.remove('active');
+  popupWindow.classList.remove('active');
+}
+
+openPopup();
+
+    </script>
+    
+</body>
+</html>

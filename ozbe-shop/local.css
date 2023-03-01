@@ -1,0 +1,140 @@
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+.cart-items li{
+	list-style: none;
+	display: flex !important;
+  margin-top: 30px;
+  height: 58px;
+  }
+  
+  @media only screen and (max-width: 390px) {
+    .cart-total {
+      margin-top: 42px;
+      font-weight: bold;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 600px) {
+    .item_name{
+      height: 45px;
+      margin-left: 30px;
+      margin-top: 2px;
+    }
+    .cart-items{
+      height: 140px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    list-style: none;
+    overflow-y: scroll;
+    }
+    ul li{
+      list-style: none;
+      display: flex !important;
+      margin-top: 30px;
+      height: 50px;
+      }
+  }
+  .product img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    float: left;
+  }
+
+  
+  .product h2 {
+    margin-top: 0;
+  }
+  
+  .price {
+    margin-top: 21px;
+    font-weight: bold;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #2165d5;
+    color: #fff;
+    border: none;
+    padding: 15px 70px;
+    cursor: pointer;
+    margin-left: 10px;
+	border-radius: 10px;
+  }
+  @media only screen and (max-width: 320px) {
+	.add-to-cart-btn  {
+	  margin-left: -1px;
+	}
+  }
+  @media only screen and (max-width: 375px) {
+	.add-to-cart-btn  {
+	  margin-left: -1px;
+	}
+  }
+  @media only screen and (max-width: 425px) {
+	.add-to-cart-btn  {
+	  margin-left: -1px;
+	}
+  }
+  @media only screen and (max-width: 768px) {
+	.add-to-cart-btn  {
+	  margin-left: -1px;
+	}
+  }
+  @media only screen and (max-width: 1024px) {
+	.add-to-cart-btn  {
+	  margin-left: -1px;
+	}
+  }
+  @media only screen and (max-width: 1440px) {
+	.add-to-cart-btn  {
+	  margin-left: -1px;
+	}
+  }
+  .remove_icon{
+	width: 25px;
+	margin-top: -3px;
+	height: 25px;
+	margin-left: 10px;
+  }
+  .remove-item-btn{
+	margin-top: 9px;
+	background-color: #ff0101;
+	color: white;
+	padding: 4px;
+	border-radius: 10px;
+	margin-left: 10px;
+  }
+  
+  .cart {
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .cart h2 {
+    margin-top: 0;
+  }
+  
+  .cart-total {
+	margin-top: 202px;
+    font-weight: bold;
+  }
+  
+  .clear-cart-btn {
+
+    background-color: #2165d5;
+    color: #fff;
+	border-radius: 10px;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin-top: 34px;
+  }
+  #name::-ms-value { 
+    font-weight: bold;
+  }
